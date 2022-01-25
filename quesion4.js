@@ -94,33 +94,36 @@ var res11 = function(arr){
 
 //Sum of odd numbers in an array
 var as=[12,34,5,6,2,56,6,2,1];
-var sss=as.reduce(function(a,c){
-    if(c%2 !==0)
- {
- return a+c;
- }
- return a;
+var oddNumbers = as.filter(function(item) {
+   return (item % 2 !== 0);
 })
-console.log(sss);   
+var total00 = oddNumbers.reduce(function(tot, curr) {
+    return tot + curr})
+
+console.log(total00);
+  
+
+//Fix the code to gen Title caps.
+var arr004 = ["guvi", "geek", "zen", "fullstack"];
+var ano=function(arro) {
+ for (var i = 0; i < arro.length; i++) {
+ arro[i] = arro[i].charAt(0).toUpperCase() + arro[i].slice(1);
+ return arro.join(' ')
+
+ }
+}
+console.log(ano(arr004));
 
 
-// //ERROR//Fix the code to gen Title caps.
-// var arr13 = ["guvi", "geek", "zen", "fullstack"];
-// (function() {
-//  for (var i = 0; i < arr.length; i++) {
-//  console.log(arr13[0][i].toUpperCase() + arr13[i].substr(1));
-//  }
-// })();
+//Fix the code to gen Title caps.
+var arr005 = ["guvi", "geek", "zen", "fullstack"];
+(function() {
+ for (var i = 0; i < arr005.length; i++) {
+ console.log(arr005[i][0].toUpperCase() + arr005[i].substr(1))
+ }
+})();
 
 
-// //Fix the code to gen Title caps.
-// var arr = ["guvi", "geek", "zen", "fullstack"];
-// var ano = function(arro) {
-//  for (var i = 0; i < arro.length; i++) {
-//  console.log(arro[0][i].toUpperCase() + arro[i].substr(1));
-//  }
-// }
-// ano(arr);
 
 // //Fix the code to give the below output:
 // var arrayy =[{firstname:"vasanth",lastname:"Raje",
