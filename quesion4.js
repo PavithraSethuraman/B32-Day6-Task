@@ -124,6 +124,38 @@ var arr005 = ["guvi", "geek", "zen", "fullstack"];
 })();
 
 
+// //Swap the odd and even digits
+aaa =(data)=>{
+    var a=data;
+    var l='';
+   for(i=0;i<a.length;i++){
+    var s=a[i+1]
+    var b=a[i]
+    l+=s
+    l+=b
+    i=i+1
+   }
+   if((a.length%2)!=0){
+    l+=a[a.length-1]
+   }
+   console.log(l);
+   }
+   aaa("1234");
+
+//Fix the code to rotate an array by k times and return rotated array using IIFE function
+var arr12 = [1, 2, 3, 6, 8, 6, 1, 9, 10, 12, 13];
+var k = 3;
+k = arr12.length % k;
+(function() {
+ out = arr12.slice(k + 1, arr12.length);
+ var count = out.length;
+ for (var i = 0; i < k + 1; i++) {
+ out[count] = arr12[i];
+ count += 1;
+ }
+ console.log(out);
+})();
+
 
 // //Fix the code to give the below output:
 // var arrayy =[{firstname:"vasanth",lastname:"Raje",
@@ -143,38 +175,3 @@ var arr005 = ["guvi", "geek", "zen", "fullstack"];
 //  }
 // }
 //  final.push(new_object)
-
-
-// //Swap the odd and even digits
-// aaa =(data)=>{
-//     var a=data;
-//    for(i=0;i<a.length-1;i++){
-//     var l='';
-//     var s=a[i+1]
-//     var b=a[i]
-//     l+=s
-//     l+=b
-//     i=i+1
-//    }
-//    if((a.length%2)!=0){
-//     l+=a[a.length-1]
-//    }
-//    console.log(l);
-//    }
-//    aaa("1234");
-
-//Fix the code to rotate an array by k times and return rotated array using IIFE function
-// var arr12 = [1, 2, 3, 6, 8, 6, 1, 9, 10, 12, 13];
-// var k = 3;
-// k = arr12.length % k;
-// (function() {
-//  arr12 = {};
-//  out = arr12.slice(k + 1, arr12.length);
-//  var count = out.length;
-//  for (var i = 0; i < k + 1; i++) {
-//  out[count] = arr12[i];
-//  count += 1;
-//  }
-//  console.log(out);
-// })();
-
