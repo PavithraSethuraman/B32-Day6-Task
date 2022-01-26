@@ -99,74 +99,68 @@ console.log(sum2);
 //Array(5) [ 1, 2, 3, 4, 5 ]
 //Array(6) [ 6, 7, 8, 9, 10, 11 ]
 var numsArr9 = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
-for (var i = 0; i <numsArr9.length; i++); {
- console.log( numsArr9[0].length,numsArr9[0])
- console.log(numsArr9[1].length,numsArr9[1])
+for (var i = 0; i <numsArr9.length; i++) {
+    console.log(numsArr9[i].length,numsArr9[i])
  }
 
 
-// // ERROR//Write a code to print elements in the inner arrays
+//Write a code to print elements in the inner arrays
 // // Output: 1234567891011
-// var numsArr10 = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
-// var str_all1="";
-// function add(numsArr10){
-//     var inner_array1=[]
-// for (var i = 0; i < numsArr10.length; i++) {
-//      inner_array1 =inner_array1.concat(numsArr10[i])
-// }
-//  for(var j = 0; j < inner_array1;j++ ){
-//     str_all1 = str_all1+inner_array1[j]
-//     return str_all1
-//  }
-//  }
-//  const b=add(numsArr)
-// console.log(b)
+var numsArr99 = [[1,2,3,4,5],[ 6,7,8,9,10,11]];
+var str_alll="";
+for (var i = 0; i < numsArr99.length; i++) {
+ var inner_array = numsArr99[i];
+ for(var j = 0 ; j <inner_array.length;j++ )
+     str_alll += inner_array[j]
+}
+console.log(str_alll);
+
+//Write a code to print elements in the inner arrays in reverse
+//Output: 11 10 9 8 7 6 5 4 3 2 1
+var numsArr10 = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all=" ";
+for (var i = numsArr10.length-1; i >= 0; i--) {
+ var inner_array = numsArr10[i];
+ for(var j = inner_array.length-1; j >= 0 ;j-- )
+     str_all +=numsArr10[i][j]+" "
+}
+console.log(str_all);
 
 
 // // Write a code to replace the array value — If the index is even, replace it with ‘even’.
-// var numsArr11 = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
-// var str_all2=0;
-// for (var i = 0; i < numsArr11.length; i++) {
-//  var inner_array2 = numsArr11[i];
-//  for(var j = 0 ; j < inner_array2.length;j++)
-//       if(inner_array2[i] %2 == 0 )
-//       {
-//          numsArr11[i] = "even"
-//        }
-// }
-// console.log(numsArr11);
+//Output: [ [“even”, 2, “even”, 4, “even”], [6, “even”, 8, “even”, 10, …] ]
+var numsArr30 = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all30=0;
+for (var i = 0; i < numsArr30.length; i++) {
+ var inner_array30 = numsArr30[i];
+ for(var j = 0 ; j < inner_array30.length;j++ )
+      if(numsArr30[i][j] %2 == 0 )
+      {
+         numsArr30[i][j] = "even"
+       }
+}
+console.log(numsArr30);
 
 
 // //Write a code to add elements in the inner arrays based on odd or even values
-// var numsArr12 = [[1, 2, 3, 4, 5],
-// [ 6, 7, 8, 9, 10, 11]];
-// var sum_odd=0;
-// var sum_even=0;
-// for (var i = 0; i < numsAr12r.length-1; i++) {
-//  var inner_array3 = numsArr12[i];
-//  for(var j = 0 ; j < inner_array3.length;j++ ){
-//  if(numsArr12[i]%2!=0)
-//  {
-//  sum_odd += numsArr12[i]
-//  }
-//  else
-//  {
-//  sum_even += numsArr12[i]
-//  }
-// }
-// }
-
-// console.log(sum_odd);
-// console.log(sum_even);
-
-
-//Write a code to print elements in the inner arrays in reverse
-// Output: 11 10 9 8 7 6 5 4 3 2 1
-// var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
-// var str_all=0;
-// for (var i = 0; i < numsArr.length; i++) {
-//  var inner_array = numsArr[i];
-//  for(var j = inner_array.length; j < 0 ;j-- )
-//      str_all +=inner_array[j]
-// }
-// console.log(str_all);
+//Output:
+// 36
+// 30
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var sum_odd=0;
+var sum_even=0;
+for (var i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i];
+ for(var j = 0 ; j < inner_array.length;j++ ){
+ if(numsArr[i][j]%2!=0)
+ {
+ sum_odd += numsArr[i][j]
+ }
+ else
+ {
+ sum_even += numsArr[i][j]
+ }
+}
+}
+console.log(sum_odd);
+console.log(sum_even);
