@@ -157,21 +157,31 @@ k = arr12.length % k;
 })();
 
 
-// //Fix the code to give the below output:
-// var arrayy =[{firstname:"vasanth",lastname:"Raje",
-// age:24,role:"JSWizard"},
-// {firstname:"Sri",lastname:"Devi",age:28,role:"Coder"}];
-// var final=[]
-// while(arrayy.length!=0)
-// {
-//  var outer_remove = arrayy.shift();
+//Fix the code to give the below output:
+//Expected OUtput
+
+[
+   {firstName: "Vasanth", lastName: "Raja", age: 24, role: "JSWizard"},
+   {firstName: "Sri", lastName: "Devi", age: 28, role: "Coder"}
+]
+
+
+var arrayy =[[["firstname","vasanth"],["lastname","Raje"],["age",24],["role","JSWizard"]],
+[["firstname","Sri"],["lastname","Devi"],["age",28],["role", "Coder"]]];
+ var final0=[]
  
-//  while(outer_remove.length!=0)
-//  {
-//  var inner_remove = outer_remove.shift()
-//  var keyy = inner_remove[0]
-//  var valuee =inner_remove[1]
-//    new_object[keyy]=valuee
-//  }
-// }
-//  final.push(new_object)
+while(arrayy.length!==0)
+{
+ var outer_remove = arrayy.shift();
+var new_object={}
+ while(outer_remove.length !==0)
+ {
+
+ var inner_remove = outer_remove.shift()
+ var keyy = inner_remove[0]
+ var valuee =inner_remove[1]
+ new_object[keyy]=valuee
+ }
+final0.push(new_object)
+}
+console.log(final0)

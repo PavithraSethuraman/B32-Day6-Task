@@ -186,20 +186,21 @@ if (lemeout) {
 console.log(msg);
 
 
-//ERROR// let login = 'Employee';
-// let message = (login == 'Employee') ? :
-//   (login == 'Director') ? 'Greetings' :
-//   (login == '') ? 'No login' :
-//   '';
-// console.log(message);
+// let login = 'Employee';
+let login = 'Employee'
+let message = (login == 'Employee') ?'hello' :
+  (login == 'Director') ? 'Greetings' :(login == '') ? 'No login' :'';
+console.log(message);
 
 
-//ERROR //Fix the code to disarm the bomb.
-// let countdown = 100;
-// while (countdown > 0) {
-//   countdown--;
-//   if(countdown == 0)
-//   {
-//    console.log("bomb triggered");
-//   }
-// }
+//Fix the code to disarm the bomb.
+let countdown = 100;
+while (countdown >= 0) {
+    if(countdown==100)
+    console.log("disarmed the bomb")
+  countdown--;
+}
+ if(countdown == 0)
+  {
+   console.log("bomb triggered");
+  }
