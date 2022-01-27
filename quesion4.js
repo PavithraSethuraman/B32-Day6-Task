@@ -158,7 +158,7 @@ k = arr12.length % k;
 
 
 //Fix the code to give the below output:
-//Expected OUtput
+//Expected Output:
 
 [
    {firstName: "Vasanth", lastName: "Raja", age: 24, role: "JSWizard"},
